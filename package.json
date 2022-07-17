@@ -1,0 +1,35 @@
+{
+  "name": "logi-in-sign-up",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wo4455/logi-in-sign-up.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wo4455/logi-in-sign-up/issues"
+  },
+  "homepage": "https://github.com/wo4455/logi-in-sign-up#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.7",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "fawn": "^2.1.5",
+    "helmet": "^5.1.0",
+    "joi": "^17.6.0",
+    "joi-password-complexity": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.4.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}
