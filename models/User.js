@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema({
     }
 });
 
-userSchema.methods.generateAuthToken() = function() {
+userSchema.methods.generateAuthToken = function() {
     const token = jwt.sign({ _id: this._id, email: this.email }, config.get('jwtPrivateKey'));
     return token;
 }
@@ -58,5 +58,5 @@ function validatePassword(password) {
 }
 
 exports.User = User;
-exports.validate = validate;
+exports.validate = validateUser;
 exports.validatePassword = validatePassword;

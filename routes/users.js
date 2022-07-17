@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
     const { error } = validate(req.body);
     if (error) return res.status(400).send("Error", error.message);
 
-    let user = User.findOne({ email: req.body.email });
+    let user = await User.findOne({ email: req.body.email }); // add await
     if (user) return res.status(400).send("User already registered.");
 
     const { invalid } = validatePassword(req.body.password);

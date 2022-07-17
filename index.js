@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const config = require('config');
 const users = require('./routes/users');
 const auth = require('./routes/auth');
 const page = require('./routes/page');
