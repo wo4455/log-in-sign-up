@@ -10,13 +10,13 @@ const router = express.Router();
 // Registering a new user
 router.post('/', async (req, res) => {
     const { error } = validate(req.body);
-    if (error) return res.status(400).send("Error", error.message);
-
-    let user = await User.findOne({ email: req.body.email }); // add await
-    if (user) return res.status(400).send("User already registered.");
+    if (error) return res.status(400).send(error.message);
 
     const { invalid } = validatePassword(req.body.password);
     if (invalid) return res.status(400).send(invalid.message);
+
+    let user = await User.findOne({ email: req.body.email }); // add await
+    if (user) return res.status(400).send("User already registered.");
 
     user = new User({
         name: req.body.name,
