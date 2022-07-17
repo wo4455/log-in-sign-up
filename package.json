@@ -28,6 +28,7 @@
     "joi-password-complexity": "^5.1.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
+    "mongodb": "^4.8.0",
     "mongoose": "^6.4.4",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.19"
