@@ -28,9 +28,9 @@ app.use('/js', express.static(__dirname + 'public/js'));
 app.use('/img', express.static(__dirname + 'public/img'));
 
 // MongoDB
-// mongoose.connect("mongodb://localhost:27017/Michael-Project")
-//   .then(() => console.log("Connected to DB.."))
-//   .catch(err => console.error("Error", err.message));
+mongoose.connect("mongodb://localhost:27017/Michael-Project")
+  .then(() => console.log("Connected to DB.."))
+  .catch(err => console.error("Error", err.message));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
