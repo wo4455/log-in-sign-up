@@ -11,5 +11,9 @@ require('./startup/static')(app);
 require('./startup/config')(app);
 require('./startup/db')();
 
+if (app.get('env') === 'production') {
+    require('./startup/prod')(app);
+}
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => winston.info(`Listening on port ${port}`));
