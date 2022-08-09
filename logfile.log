@@ -17,3 +17,6 @@
 {"level":"info","message":"Listening on port 3000"}
 {"level":"info","message":"Connected to MongoDB!"}
 {"level":"error","message":"Something failed Something failed","stack":"Error: Something failed\n    at C:\\Users\\willo\\Documents\\GitHub\\log-in-sign-up\\routes\\users.js:26:11\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to MongoDB!"}
