@@ -9,5 +9,5 @@ module.exports = async function() {
     if (!uri) throw new Error('No MongoDB URI found.');
 
     await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
-        .then(() => winston.info('Connected to MongoDB!'));
+        .then(() => console.log("Connected to MongoDB!"));
 }

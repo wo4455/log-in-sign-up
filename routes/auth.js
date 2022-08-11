@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
 
     const token = user.generateAuthToken();
     res.header('x-auth-token', token);
-    res.send(token);
+    res.redirect('/main');
 });
 
 function validate(req) {
