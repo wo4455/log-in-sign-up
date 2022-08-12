@@ -36,3 +36,14 @@
 {"level":"info","message":"Listening on port 3000"}
 {"level":"info","message":"Listening on port 3000"}
 {"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'x-auth-token')"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'x-auth-token')"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'x-auth-token')"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'x-auth-token')"}
+{"level":"info","message":"Listening on port 3000"}
